@@ -1,0 +1,48 @@
+/*for the all page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Console', "Courier New", monospace;
+}
+
+body
+{
+    overflow: hidden;
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.start_button{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.start_button button{
+    font-size: 30px;
+    font-weight: bold;
+    color:#fff;
+    background: #000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);
+}
+
+.start_button button:hover
+{
+    font-style: italic;
+    font-size: larger;
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);
+
+}
+
+.title{
+    color:white;
+}
+
+.timer{
+    color:white;
+}
