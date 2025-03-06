@@ -5,18 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game with Timer</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="questions.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./javascript/questions.js"></script>
+    <script type="text/javascript" src="./javascript/script.js"></script>
 
 </head>
 <body>
     <!--The start button-->
      <div class="start_button"><button>START QUIZ</button></div>
 
+
+     <!--Some buttons for exiting or continuing the game-->
+     <div class="buttons">
+        <div class="exit">Exit</div>
+        <div class="continue">Continue</div>
+     </div>
      <!--The quiz box, where the questions and answers will be displayed-->
      <div class="quiz_box">
-        <div class="title">Quiz game</div>
-        <div class="timer">Time left:</div>
+        <!--Header, section and footer helps you to see the more organized, they are similar to divs-->
+        <header>
+            <div class="title">Quiz game </div>
+            <div class="timer">
+                <div class="timer_text">Time left:</div>
+                <div class="time_seconds">20</div>
+            </div>
+        </header>
+        <section>
+            <!--then I will display the questions imported from JavaScript-->
+            <div class="question_text"></div>
+            <!--options will be here-->
+            <div class="options_given"></div>
+        </section>
+        <footer>
+            <!--Here will be the score and the posibility to restart or quit-->
+            <div class="total_questions"></div>
+            <div class="next_button">NEXT</div>
+        </footer>
      </div>
-</body>
+
+     <div class="result_box"></div>
+     <div class="complete_text">Congrats! You got the end!</div>
+     <div class="score_text">
+        <div class="buttons">
+            <!--these buttons are kind of necessary-->
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    </body>
 </html>
