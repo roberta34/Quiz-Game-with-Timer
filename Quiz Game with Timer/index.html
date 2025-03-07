@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Game with Timer</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="./javascript/questions.js"></script>
-    <script type="text/javascript" src="./javascript/script.js"></script>
-
-</head>
-<body>
-    <!--The start button-->
-     <div class="start_button"><button>START QUIZ</button></div>
-
-
-     <!--Some buttons for exiting or continuing the game-->
-     <div class="buttons">
-        <div class="exit">Exit</div>
-        <div class="continue">Continue</div>
-     </div>
-     <!--The quiz box, where the questions and answers will be displayed-->
-     <div class="quiz_box">
-        <!--Header, section and footer helps you to see the more organized, they are similar to divs-->
-        <header>
-            <div class="title">Quiz game </div>
-            <div class="timer">
-                <div class="timer_text">Time left:</div>
-                <div class="time_seconds">20</div>
-            </div>
-        </header>
-        <section>
-            <!--then I will display the questions imported from JavaScript-->
-            <div class="question_text"></div>
-            <!--options will be here-->
-            <div class="options_given"></div>
-        </section>
-        <footer>
-            <!--Here will be the score and the posibility to restart or quit-->
-            <div class="total_questions"></div>
-            <div class="next_button">NEXT</div>
-        </footer>
-     </div>
-
-     <div class="result_box"></div>
-     <div class="complete_text">Congrats! You got the end!</div>
-     <div class="score_text">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Game with Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="start_button"><button>Start Quiz</button></div>
         <div class="buttons">
-            <!--these buttons are kind of necessary-->
-            <button class="restart">Replay</button>
-            <button class="quit">Quit</button>
+            <button class="exit">Exit</button>
+            <button class="restart">Continue</button>
         </div>
-    </div>
+        <div class="quiz_box">
+            <header>
+                <div class="title">Quiz Game</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time left: </div>
+                    <div class="timer_sec">20</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="question_text"></div>
+                <div class="option_list"></div>
+            </section>
+            <footer>
+                <div class="total_questions">
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+        <div class="result_box"></div>
+        <div class="complete_text">Congrats! You finished the quiz!</div>
+        <div class="score_text">
+        <!-- Score result will be inserted here by JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+        <script type="text/javascript" src="javascript/questions.js"></script>
+        <script type="text/javascript" src="javascript/script.js"></script>
     </body>
 </html>
