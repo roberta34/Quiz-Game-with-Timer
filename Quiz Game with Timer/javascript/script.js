@@ -1,12 +1,14 @@
-const startBtn = document.querySelector(".start_button button");
+const startBtn = document.querySelector(".start_btn button");
+const infoBox = document.querySelector(".info_box");
 const exitBtn = infoBox.querySelector(".buttons .quit");
 const continueBtn = infoBox.querySelector(".buttons .restart");
+const quizBox = document.querySelector(".quiz_box");
 const resultBox = document.querySelector(".result_box");
 const optionList = document.querySelector(".option_list");
 const timeLine = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-let timeValue = 15;
+let timeValue = 20;
 let queCount = 0;
 let queNumb = 1;
 let userScore = 0;
@@ -16,7 +18,7 @@ let widthValue = 0;
 const restartQuizBtn = resultBox.querySelector(".buttons .restart");
 const quitQuizBtn = resultBox.querySelector(".buttons .quit");
 const nextBtn = document.querySelector("footer .next_btn");
-const bottomQuesCounter = document.querySelector("footer .total_questions");
+const bottomQuesCounter = document.querySelector("footer .total_que");
 // Show info box when start button is clicked
 startBtn.onclick = () => {
 infoBox.classList.add("activeInfo");
@@ -63,7 +65,7 @@ startTimerLine(widthValue);
 }
 // Reset quiz variables
 function resetQuiz() {
-timeValue = 15;
+timeValue = 20;
 queCount = 0;
 queNumb = 1;
 userScore = 0;
@@ -82,7 +84,7 @@ nextBtn.classList.remove("show");
 }
 // Show questions and options
 function showQuestions(index) {
-const queText = document.querySelector(".question_text");
+const queText = document.querySelector(".que_text");
 let queTag = `<span>${questions[index].numb}. ${questions[index].question}</span>`;
 let optionTag = questions[index].options.map(option => `<div class="option"><span>${option}</span></div>`).join('');
 queText.innerHTML = queTag;
@@ -133,11 +135,11 @@ resultBox.classList.add("activeResult");
 const scoreText = resultBox.querySelector(".score_text");
 let scoreTag = '';
 if (userScore > 3) {
-scoreTag = `<span>and congrats! , You got <p>${userScore}</p> out of <p>${questions.length}</p></span>`;
+scoreTag = `<span>You got ${userScore} out of ${questions.length}.Congrats! You are the best!</span>`;
 } else if (userScore > 1) {
-scoreTag = `<span>and nice , You got <p>${userScore}</p> out of <p>${questions.length}</p></span>`;
+scoreTag = `<span>You got ${userScore} out of ${questions.length}. That's pretty nice!</span>`;
 } else {
-scoreTag = `<span>and sorry , You got only <p>${userScore}</p> out of <p>${questions.length}</p></span>`;
+scoreTag = `<span>You got only ${userScore} out of ${questions.length}. Sorry:(((</span>`;
 }
 scoreText.innerHTML = scoreTag;
 }
@@ -171,3 +173,6 @@ function queCounter(index) {
 let totalQueCounTag = `<span><p>${index}</p> of <p>${questions.length}</p> Questions</span>`;
 bottomQuesCounter.innerHTML = totalQueCounTag;
 }
+// Tick and cross icons
+const tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
+const crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';

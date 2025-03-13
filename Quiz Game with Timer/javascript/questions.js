@@ -3,9 +3,9 @@
 //it will a nested array(similar to a words vector in C)
 let questions = [
     {
-        number: 1,
+        numb: 1,
         question: "What is the chemical symbol for the element potassium?",
-        answer: "K",
+        answer: "c) K",
         options:[
             "a) P",
             "b) Po",
@@ -14,9 +14,9 @@ let questions = [
         ]
     },
     {
-        number: 2,
+        numb: 2,
         question: "Who developed the theory of general relativity?",
-        answer: "Albert Einstein",
+        answer: "a) Albert Einstein",
         options:[
             "a) Albert Einstein",
             "b) Isaac Newton",
@@ -25,9 +25,9 @@ let questions = [
         ]
     },
     {
-        number: 3,
+        numb: 3,
         question: "What is the formula for gravity?",
-        answer: "m*g",
+        answer: "b) m*g",
         options:[
             "a) F*d",
             "b) m*g",
@@ -36,9 +36,9 @@ let questions = [
         ]
     },
     {
-        number: 4,
+        numb: 4,
         question: "What is the powerhouse of the cell?",
-        answer: "Mitochondrion",
+        answer: "d) Mitochondrion",
         options:[
             "a) Heart",
             "b) Ribosome",
@@ -47,9 +47,9 @@ let questions = [
         ]
     },
     {
-        number: 5,
+        numb: 5,
         question: "Which programming language is known for its use in data science?",
-        answer: "Python",
+        answer: "b) Python",
         options:[
             "a) C++",
             "b) Python",
@@ -58,9 +58,9 @@ let questions = [
         ]
     },
     {
-        number: 6,
+        numb: 6,
         question: " What does RAM stand for in computing?",
-        answer: "Random Access Memory",
+        answer: "a) Random Access Memory",
         options:[
             "a) Random Access Memory",
             "b) Randomized Access Memory",
@@ -69,9 +69,9 @@ let questions = [
         ]
     },
     {
-        number: 7,
+        numb: 7,
         question: "Which of these is an open-source operating system?",
-        answer: "Linux",
+        answer: "d) Linux",
         options:[
             "a) Windows 11",
             "b) Windows 7",
@@ -80,9 +80,9 @@ let questions = [
         ]
     },
     {
-        number: 8,
+        numb: 8,
         question: "What does CPU stand for in computing?",
-        answer: "Central Processing Unit",
+        answer: "c) Central Processing Unit",
         options:[
             "a) Central Professor Unit",
             "b) Central Process Unit",
@@ -91,9 +91,9 @@ let questions = [
         ]
     },
     {
-        number: 9,
+        numb: 9,
         question: "Who wrote the play <i>Romeo and Juliet</i>?",
-        answer: "William Shakespeare",
+        answer: "c) William Shakespeare",
         options:[
             "a) J.D. Salinger",
             "b) Atticus Finch",
@@ -102,9 +102,9 @@ let questions = [
         ]
     },
     {
-        number: 10,
+        numb: 10,
         question: "What is the title of the last Harry Potter book?",
-        answer: "Harry Potter and the Deathly Hollows",
+        answer: "b) Harry Potter and the Deathly Hollows",
         options:[
             "a) Harry Potter and the Philosopher's Stone",
             "b) Harry Potter and the Deathly Hollows",
@@ -113,9 +113,9 @@ let questions = [
         ]
     },
     {
-        number: 11,
+        numb: 11,
         question: "Who wrote <i>The Odyssey</i>?",
-        answer: "Homer",
+        answer: "a) Homer",
         options:[
             "a) Homer",
             "b) Aristophanes",
@@ -124,9 +124,9 @@ let questions = [
         ]
     },
     {
-        number: 12,
+        numb: 12,
         question: "Which book series features the character <i>Frodo Baggins</i>?",
-        answer: "The Lord of the Rings",
+        answer: "d) The Lord of the Rings",
         options:[
             "a) The Chronicles of Narnia",
             "b) A Song of Ice and Fire",
@@ -135,9 +135,9 @@ let questions = [
         ]
     },
     {
-        number: 13,
+        numb: 13,
         question: "Who was the first President of the United States?",
-        answer: "George Washington",
+        answer: "a) George Washington",
         options:[
             "a) George Washington",
             "b) Thomas Jefferson",
@@ -146,9 +146,9 @@ let questions = [
         ]
     },
     {
-        number: 14,
+        numb: 14,
         question: "Which year did World War II end?",
-        answer: "1945",
+        answer: "b) 1945",
         options:[
             "a) 1918",
             "b) 1945",
@@ -157,9 +157,9 @@ let questions = [
         ]
     },
     {
-        number: 15,
+        numb: 15,
         question: "In which year did the Titanic sink?",
-        answer: "1912",
+        answer: "c) 1912",
         options:[
             "a) 1960",
             "b) 1812",
