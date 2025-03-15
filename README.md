@@ -1,1 +1,1 @@
-# Joc-Vanilla
+Vanilla Game
