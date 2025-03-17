@@ -1,1 +1,1 @@
-Vanilla Game
+Quiz Game created with vanilla HTML, CSS, JavaScript with general questions. I have used some source-code from this website and I modified it, in order to understand better the concepts of JavaScript:https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
