@@ -1,1 +1,23 @@
-Quiz Game created with vanilla HTML, CSS, JavaScript with general questions. I have used some source-code from this website and I modified it, in order to understand better the concepts of JavaScript:https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
+** Quiz Game with Timer** 
+A fun and interactive browser-based quiz game that tests your knowledge under pressure! Built with vanilla HTML, CSS, and JavaScript, this game challenges users to answer questions before the timer runs out.
+
+**Features**
+-  Smooth start-to-finish quiz flow
+
+-  20-second timer per question
+
+-  Instant feedback on correct/incorrect answers
+
+-  Final score summary with feedback
+
+-  Replay or quit options at the end
+
+-  Responsive design for all screen sizes
+
+ ** Project Structure**
+   javascript
+  └── script.js         
+  └── questions.js     
+ index.html            
+ style.css             
+
