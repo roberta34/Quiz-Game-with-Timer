@@ -18,6 +18,7 @@ A fun and interactive browser-based quiz game that tests your knowledge under pr
  **Project Structure**
  
    javascript
+   
   └── script.js         
   └── questions.js     
  index.html            
