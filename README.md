@@ -1,4 +1,5 @@
 ** Quiz Game with Timer** 
+
 A fun and interactive browser-based quiz game that tests your knowledge under pressure! Built with vanilla HTML, CSS, and JavaScript, this game challenges users to answer questions before the timer runs out.
 
 **Features**
@@ -15,6 +16,7 @@ A fun and interactive browser-based quiz game that tests your knowledge under pr
 -  Responsive design for all screen sizes
 
  ** Project Structure**
+ 
    javascript
   └── script.js         
   └── questions.js     
